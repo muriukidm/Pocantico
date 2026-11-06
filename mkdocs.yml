@@ -38,7 +38,7 @@ theme:
 extra:
   analytics:
     provider: google
-    property: G-XXXXXXXXXX  # Replace with your actual Measurement ID
+    property: G-63E6KHYEDB
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/muriukidm
