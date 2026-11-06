@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "pocantico-runbooks"
+version = "0.1.0"
+description = "Cloud & Network Engineering Portfolio"
+authors = ["Denis Muriuki"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs-material = "^9.5.0"
+mkdocstrings = {extras = ["python"], version = "^0.28.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
