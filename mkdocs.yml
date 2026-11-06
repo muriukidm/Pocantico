@@ -6,10 +6,22 @@ theme:
     logo: material/console-network-outline
   favicon: material/console-network-outline
   palette:
-    # Force Strict Dark Mode
-    - scheme: slate
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: black
       accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -18,6 +30,11 @@ theme:
     - navigation.instant
     - navigation.top
     - content.code.copy
+
+extra:
+  analytics:
+    provider: google
+    property: G-63E6KHYEDB 
 
 # Core Markdown Extensions for Cloud Engineers
 markdown_extensions:
