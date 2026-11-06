@@ -1,0 +1,49 @@
+site_name: "Pocantico | Cloud & Network Engineering"
+
+theme:
+  name: material
+  icon:
+    logo: material/console-network-outline
+  favicon: material/console-network-outline
+  palette:
+    # Force Strict Dark Mode
+    - scheme: slate
+      primary: black
+      accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.top
+    - content.code.copy
+
+# Core Markdown Extensions for Cloud Engineers
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets:
+      base_path: docs/includes
+
+plugins:
+  - search
+  - blog:
+      archive: true
+      archive_date_format: yyyy
+  - tags
+  - mkdocstrings
+  
+
+nav:
+  - Resume & Architecture: index.md
+  - About: about.md
+  - Engineering Blog:
+      - blog/index.md
+  - Runbooks:
+      - Azure & Bicep: runbooks/azure-bicep.md
+      - CCNA Topologies: runbooks/ccna.md
+      - RHEL 9 Labs: runbooks/rhel9.md
