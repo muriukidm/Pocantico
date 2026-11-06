@@ -8,6 +8,7 @@ authors = ["Denis Muriuki"]
 python = "^3.11"
 mkdocs-material = "^9.5.0"
 mkdocstrings = {extras = ["python"], version = "^0.28.0"}
+mkdocs-jupyter = "^0.24.0"
 
 [build-system]
 requires = ["poetry-core"]
