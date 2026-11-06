@@ -2,7 +2,7 @@ site_name: "Pocantico | Cloud & Network Engineering"
 
 theme:
   name: material
-  custom_dir: overrides
+
   icon:
     logo: material/console-network-outline
   favicon: material/console-network-outline
@@ -53,12 +53,17 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.progressbar
+  - attr_list      
+  - md_in_html
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.snippets:
       base_path: docs/includes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search

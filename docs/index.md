@@ -1,35 +1,72 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Denis Muriuki
 
-**Cloud Infrastructure, Systems Administration, and Network Engineering**
+<p class="md-typeset__lead">
+  I build and operate resilient systems. My engineering philosophy is heavily influenced by the logistical precision of John D. Rockefeller's <em>Pocantico</em>—focusing on uncompromising fundamentals, declarative infrastructure, and the elimination of operational waste.
+</p>
+
+[View Runbooks](runbooks/azure-bicep.md){ .md-button .md-button--primary }
+[GitHub Portfolio](https://github.com/muriukidm){ .md-button }
 
 ---
 
-## Executive Summary
+<h2 style="color: var(--md-primary-fg-color); font-weight: 800;">Core Competencies</h2>
 
-I build and operate resilient systems. My engineering philosophy is heavily influenced by the logistical precision of John D. Rockefeller's _Pocantico_—focusing on uncompromising fundamentals, declarative infrastructure, and the elimination of operational waste.
+<div class="grid cards" markdown>
 
-Currently building out enterprise networking and Linux automation labs while executing high-volume shift operations at GXO.
+- [:material-cloud-tags: **Cloud & Infrastructure as Code**](runbooks/azure-bicep.md)
 
-## Core Competencies
+  Deploying immutable infrastructure and managing state pipelines.
 
-- **Cloud & Infrastructure as Code:** Microsoft Azure, Bicep DSL, GitHub Actions CI/CD
-- **Systems & Virtualization:** Red Hat Enterprise Linux (RHEL 9), Bash Scripting, Docker, VirtualBox
-- **Networking & Security:** CCNA Routing & Switching, OSPF, Wireshark Packet Analysis, GNS3 Topologies
-- **Software Engineering:** Python, DistilBERT (NLP applied to Hate Speech Detection), MkDocs Docs-as-Code
+  `Microsoft Azure` `Bicep DSL` `GitHub Actions CI/CD`
 
-## Verified Certifications
+- [:material-linux: **Systems & Virtualization**](runbooks/rhel9.md)
 
-- **Microsoft Certified: Azure Fundamentals (AZ-900)** — _Completed_
-- **Cisco Certified Network Associate (CCNA 200-301)** — _In Flight_
-- **Red Hat Certified System Administrator (RHCSA EX200)** — _In Flight_
+  Configuring and hardening local and remote environments.
 
-## Education
+  `RHEL 9` `Bash Scripting` `Docker` `VirtualBox`
 
-- **MSc in Computer Science** — Technological University Dublin (TU Dublin)
-- **BSc in Information Technology** — Jomo Kenyatta University
+- [:material-router-network: **Networking & Security**](runbooks/ccna.md)
 
----
+  Routing, switching, and packet-level traffic analysis.
 
-### Navigation
+  `CCNA 200-301` `OSPF` `Wireshark` `GNS3`
 
-Use the tabs above to view my **Engineering Blog** for project post-mortems, or browse the **Runbooks** for living, continually updated documentation on my local lab topologies and Azure deployments.
+- [:material-code-json: **Software Engineering**](https://github.com/muriukidm/social-threat-guardian)
+
+  Building analytical models and treating documentation as software.
+
+  `Python` `DistilBERT` `Docs-as-Code`
+
+</div>
+
+<h2 style="color: var(--md-primary-fg-color); font-weight: 800;">Active Certifications</h2>
+
+Track my current upskilling progress.
+
+<div class="grid cards" markdown>
+
+- :material-microsoft-azure: **Microsoft Azure Fundamentals (AZ-900)**
+
+  Validates foundational knowledge of cloud architecture, compute, and governance.
+
+  :material-check-decagram: **100% Done**
+
+- :material-redhat: **Red Hat Certified System Administrator (EX200)**
+
+  Proves ability to configure, manage, and troubleshoot RHEL 9 environments.
+
+  :material-timer-sand: **65% Done**
+
+- :material-router-network: **Cisco Certified Network Associate (200-301)**
+
+  Demonstrates proficiency in routing, switching, and network automation.
+
+  :material-timer-sand: **40% Done**
+
+</div>
