@@ -6,7 +6,6 @@ theme:
     logo: material/console-network-outline
   favicon: material/console-network-outline
   palette:
-    # Light Mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
@@ -14,7 +13,6 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    # Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
@@ -29,18 +27,33 @@ theme:
     - navigation.tabs
     - navigation.instant
     - navigation.top
+    - navigation.footer      # Activates the Next/Previous footer
+    - search.suggest         # Rich predictive search modal
+    - search.highlight       # Highlights search terms in results
     - content.code.copy
+
+extra_css:
+  - stylesheets/custom.css   # Hooks in our background image
 
 extra:
   analytics:
     provider: google
-    property: G-63E6KHYEDB 
+    property: G-63E6KHYEDB  
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/muriukidm
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yourprofile  # Update this
 
-# Core Markdown Extensions for Cloud Engineers
+copyright: Copyright &copy; 2026 Denis Muriuki
+
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.progressbar     # Enables gamified progress tracking
+  - pymdownx.tasklist:       # Enables interactive checkboxes
+      custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.snippets:
