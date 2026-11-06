@@ -37,13 +37,13 @@ plugins:
   - tags
   - mkdocstrings
   
-
 nav:
-  - Resume & Architecture: index.md
-  - About: about.md
-  - Engineering Blog:
-      - blog/index.md
+  - Home: index.md
   - Runbooks:
-      - Azure & Bicep: runbooks/azure-bicep.md
-      - CCNA Topologies: runbooks/ccna.md
-      - RHEL 9 Labs: runbooks/rhel9.md
+      - Azure Infrastructure (Bicep): runbooks/azure-bicep.md
+      - CCNA Networking: runbooks/ccna.md
+      - RHEL 9 Administration: runbooks/rhel9.md
+  - Projects:
+      - Social Threat Guardian (DistilBERT): https://github.com/muriukidm/social-threat-guardian
+  - Blog: blog/index.md
+  - About: about.md
