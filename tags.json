@@ -1,0 +1,1 @@
+{"mappings": [{"item": {"url": "runbooks/azure/az-900/", "title": "Cloud & IaC (Azure)"}, "tags": ["azure", "cloud", "iac"]}, {"item": {"url": "runbooks/linux/rhel9/", "title": "Linux & Systems Admin"}, "tags": ["linux", "rhel9", "sysadmin"]}, {"item": {"url": "runbooks/networking/ccna/", "title": "Enterprise Networking"}, "tags": ["ccna", "cisco", "networking"]}]}
