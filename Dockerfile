@@ -15,5 +15,5 @@ RUN poetry config virtualenvs.create false \
 # Expose the local development port
 EXPOSE 8044
 
-# Default command to serve the site on container start
-CMD ["mkdocs", "serve", "-a", "0.0.0.0:8044"]
+# Execute the native mkdocs command directly through Poetry to bypass any $PATH resolution issues
+CMD ["poetry", "run", "mkdocs", "serve", "-a", "0.0.0.0:8044"]

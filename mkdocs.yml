@@ -1,86 +1,40 @@
-site_name: "Pocantico | Cloud & Network Engineering"
+site_name: Pocantico Operations
+site_description: Cloud & Network Engineering Portfolio
+site_author: Denis Muriuki
 
 theme:
   name: material
-
-  icon:
-    logo: material/console-network-outline
-  favicon: material/console-network-outline
-  palette:
-    # Light Mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    # Dark Mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
+  variant: classic
   features:
     - navigation.tabs
-    - navigation.instant
+    - navigation.sections
     - navigation.top
-    - navigation.footer
-    - search.suggest
-    - search.highlight
-    - content.code.copy
-
-extra:
-  analytics:
-    provider: google
-    property: G-63E6KHYEDB
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/muriukidm
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/yourprofile  # Update this with your URL
-
-copyright: Copyright &copy; 2026 Denis Muriuki
-
-# Core Markdown Extensions for Cloud Engineers
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.progressbar
-  - attr_list      
-  - md_in_html
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.snippets:
-      base_path: docs/includes
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search
-  - mkdocs-jupyter
-  - blog:
-      archive: true
-      archive_date_format: yyyy
   - tags
-  - mkdocstrings
-  
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - .icons
 nav:
   - Home: index.md
-  - Runbooks:
-      - Azure Infrastructure (Bicep): runbooks/azure-bicep.md
-      - CCNA Networking: runbooks/ccna.md
-      - RHEL 9 Administration: runbooks/rhel9.md
-  - Projects:
-      - Social Threat Guardian (DistilBERT): https://github.com/muriukidm/social-threat-guardian
-  - Blog: blog/index.md
+  - Engineering Domains:
+      - Cloud & IaC (Azure): runbooks/azure/az-900.md
+      - Linux & Systems Admin: runbooks/linux/rhel9.md
+      - Enterprise Networking: runbooks/networking/ccna.md
+  - Technology Index: tags.md
   - About: about.md
